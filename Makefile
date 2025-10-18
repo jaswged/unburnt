@@ -4,13 +4,16 @@ rust-version:
 	cargo --version 			#rust package manager
 	rustfmt --version			#rust code formatter
 	rustup --version			#rust toolchain manager
-	clippy-driver --version		#rust linter
+	clippy-driver --version		        #rust linter
 
 format:
 	cargo fmt --quiet
 
 lint:
-	cargo clippy --quiet
+	cargo clippy -- --D clippy::pedantic
+
+lintq:
+        cargo clippy --quiet
 
 test:
 	cargo test --quiet

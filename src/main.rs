@@ -1,4 +1,4 @@
-#![recursion_limit = "256"] // needed for Vulkan
+// #![recursion_limit = "256"] // needed for Vulkan
 mod model;
 mod data;
 mod training;
